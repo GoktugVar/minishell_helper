@@ -1,0 +1,10 @@
+{
+	"id": "27",
+	"name": "stat",
+	"library": "sys/stat.h",
+	"declaration":"int stat(const char *pathname, struct stat *statbuf)",
+	"compileFlag": "cc ...",
+	"description":"Bir dosya veya dizin hakkında istatistiksel bilgi almak için kullanılır. İlk parametre incelenecek dosyanın yolu, ikinci parametre bilgilerin yazılacağı stat yapısıdır.$$struct stat yapısı dosya türü, izinler, sahiplik, boyut, zaman damgaları, blok sayısı gibi dosya hakkında kapsamlı bilgiler içerir.$$Dosya türünü belirlemek için S_ISREG(), S_ISDIR(), S_ISLNK() gibi makrolar stat yapısının st_mode alanıyla birlikte kullanılabilir.$$⚠️ Bu fonksiyon sembolik bağlantıları (symbolic links) takip eder; sembolik bağlantının kendisi hakkında bilgi almak için lstat() kullanılmalıdır.",
+	"codeFile": "code-samples/27-stat-sample.c",
+	"return": "Dönüş Değeri: Başarılı olduğunda 0. Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

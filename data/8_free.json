@@ -1,0 +1,10 @@
+{
+	"id": "8",
+	"name": "free",
+	"library": "stdlib.h",
+	"declaration":"void free(void *ptr)",
+	"compileFlag": "cc ...",
+	"description": "Daha önce malloc(), calloc() veya realloc() ile ayrılmış bir bellek bloğunu serbest bırakmak için kullanılır. Parametre olarak serbest bırakılacak bellek bloğunun başlangıç adresini alır.$$Bu fonksiyon, programın bellek yönetimini optimize etmek ve bellek sızıntılarını önlemek için kritik öneme sahiptir.$$⚠️ Aynı bellek bloğunu iki kez serbest bırakmaya çalışmak (double free) tanımsız davranışa neden olur. Ayrıca serbest bırakıldıktan sonra o bellek alanına erişmek (use after free) de tehlikelidir.",
+	"codeFile": "code-samples/8-free-sample.c",
+	"return": "Dönüş Değeri: Yok (void fonksiyon)"
+}

@@ -1,0 +1,10 @@
+{
+	"id": "2",
+	"name": "rl_clear_history",
+	"library": "readline/history.h",
+	"declaration":"void rl_clear_history(void)",
+	"compileFlag": "cc ... -lreadline",
+	"description": "GNU Readline kütüphanesinin geçmiş listesini tamamen temizlemek için kullanılır. Bu fonksiyon çağrıldığında, add_history() ile daha önce eklenen tüm girişler silinir.$$Programınızın çalışması süresince biriken geçmiş listesini belirli koşullarda veya program sonlandırılmadan önce temizlemek için kullanışlıdır.",
+	"codeFile": "code-samples/2-rl-clear-history-sample.c",
+	"return": "Dönüş Değeri: Yok (void fonksiyon)"
+}

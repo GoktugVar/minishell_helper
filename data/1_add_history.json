@@ -1,0 +1,10 @@
+{
+	"id": "1",
+	"name": "add_history",
+	"library": "readline/history.h",
+	"declaration":"void add_history(const char *line)",
+	"compileFlag": "cc ... -lreadline",
+	"description": "GNU Readline kütüphanesinin history özelliğine yeni bir giriş eklemek için kullanılır. Parametre olarak geçmiş listesine eklenecek bir metin satırı alır.$$Bu fonksiyon ile eklenen girişler, kullanıcı yukarı/aşağı ok tuşlarını kullandığında erişilebilir hale gelir. Komut geçmişi özelliği interaktif kabuk uygulamaları için oldukça kullanışlıdır.$$⚠️ Sadece anlamlı ve boş olmayan komutları geçmişe eklemelisiniz.",
+	"codeFile": "code-samples/1-add-history-sample.c",
+	"return": "Dönüş Değeri: Yok (void fonksiyon)"
+}

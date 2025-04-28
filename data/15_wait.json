@@ -1,0 +1,10 @@
+{
+	"id": "15",
+	"name": "wait",
+	"library": "sys/wait.h",
+	"declaration":"pid_t wait(int *status)",
+	"compileFlag": "cc ...",
+	"description": "Çocuk işlemlerin sonlanmasını beklemek için kullanılır. Parametre olarak çocuk işlemin çıkış durumunun yazılacağı bir tamsayı adresini alır.$$Bu fonksiyon, çağrıyı yapan işlemi herhangi bir çocuk işlem sonlanana kadar bloke eder. Çocuk işlem zaten sonlanmışsa, hemen döner.$$Status parametresi NULL olmadığında, çocuk işlemin çıkış kodunu ve sonlanma nedenini analiz etmek için WIFEXITED, WEXITSTATUS, WIFSIGNALED, WTERMSIG gibi makrolar kullanılabilir.",
+	"codeFile": "code-samples/15-wait-sample.c",
+	"return": "Dönüş Değeri: Sonlanan çocuk işlemin PID'si. Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

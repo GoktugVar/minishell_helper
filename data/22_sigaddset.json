@@ -1,0 +1,10 @@
+{
+	"id": "22",
+	"name": "sigaddset",
+	"library": "signal.h",
+	"declaration":"int sigaddset(sigset_t *set, int signum)",
+	"compileFlag": "cc ...",
+	"description": "Belirli bir sinyali sinyal kümesine eklemek için kullanılır. İlk parametre sinyal kümesi, ikinci parametre eklenecek sinyalin numarasıdır.$$Bu fonksiyon, sigaction() veya sigprocmask() fonksiyonlarında kullanılacak sinyal maskelerini hazırlamak için sigemptyset() ile birlikte kullanılır.$$Sinyal kumesindeki üyelik durumu sigismember() fonksiyonu ile test edilebilir.",
+	"codeFile": "code-samples/22-sigaddset-sample.c",
+	"return": "Dönüş Değeri: Başarılı olduğunda 0. Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

@@ -1,0 +1,10 @@
+{
+	"id": "7",
+	"name": "malloc",
+	"library": "stdlib.h",
+	"declaration":"void *malloc(size_t size)",
+	"compileFlag": "cc ...",
+	"description": "Belirtilen boyutta bir bellek bloğu ayırmak için kullanılır. Parametre olarak ayrılacak belleğin byte cinsinden boyutunu alır.$$Bellekteki tahsis edilmiş alanın ilk adresini gösteren bir işaretçi döndürür. Bellek ayırma başarısız olursa NULL döndürür.$$⚠️ malloc() ile ayrılan bellek kullanım bittikten sonra mutlaka free() ile serbest bırakılmalıdır, aksi halde bellek sızıntısı (memory leak) oluşur.",
+	"codeFile": "code-samples/7-malloc-sample.c",
+	"return": "Dönüş Değeri: Ayrılan bellek bloğunun başlangıç adresini gösteren void işaretçisi. Bellek ayrılamazsa NULL döndürür."
+}

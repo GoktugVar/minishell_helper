@@ -1,0 +1,10 @@
+{
+	"id": "39",
+	"name": "perror",
+	"library": "stdio.h",
+	"declaration":"void perror(const char *s)",
+	"compileFlag": "cc ...",
+	"description":"Mevcut errno değerine göre bir hata mesajı yazdırmak için kullanılır. Parametre olarak hata mesajının önüne eklenecek bir metin alır.$$Bu fonksiyon, belirtilen metni ve ardından iki nokta üst üste, bir boşluk ve ardından mevcut errno değerine karşılık gelen hata mesajını standart hata çıkışına (stderr) yazar.$$⚠️ perror() çağrılmadan önce errno değeri değişebileceğinden, hata oluştuğunda hemen çağrılmalı veya errno değeri saklanmalıdır. Özellikle printf() gibi fonksiyonlar errno değerini değiştirebilir.",
+	"codeFile": "code-samples/39-perror-sample.c",
+	"return": "Dönüş Değeri: Yok (void fonksiyon)"
+}

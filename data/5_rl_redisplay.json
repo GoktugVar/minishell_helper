@@ -1,0 +1,10 @@
+{
+	"id": "5",
+	"name": "rl_redisplay",
+	"library": "readline/readline.h",
+	"declaration":"void rl_redisplay(void)",
+	"compileFlag": "cc ... -lreadline",
+	"description": "Readline'ın giriş tamponunun içeriğine göre komut satırının görüntüsünü yeniler. Prompt ve kullanıcının girdiği mevcut metin yeniden çizilir.$$Bu fonksiyon özellikle rl_replace_line() gibi fonksiyonlarla tampon içeriğini değiştirdikten sonra veya terminalin durumunu değiştiren işlemlerden sonra ekranı güncellemek için kullanılır.$$Sinyal işleyicileri içinden çağrıldığında readline'ın normal işleyişini ve ekran görüntüsünü korumaya yardımcı olur.",
+	"codeFile": "code-samples/5-rl-redisplay-sample.c",
+	"return": "Dönüş Değeri: Yok (void fonksiyon)"
+}

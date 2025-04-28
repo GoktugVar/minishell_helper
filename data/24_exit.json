@@ -1,0 +1,10 @@
+{
+	"id": "24",
+	"name": "exit",
+	"library": "stdlib.h",
+	"declaration":"void exit(int status)",
+	"compileFlag": "cc ...",
+	"description":"Çağrıldığı işlemi normal bir şekilde sonlandırmak için kullanılır. Parametre olarak çıkış durumunu (exit status) gösteren bir tamsayı alır.$$Bu fonksiyon, çağrıldığında önce atexit() ile kaydedilmiş tüm sonlandırma fonksiyonlarını çağırır, açık dosya tanımlayıcılarını kapatır, standart çıkış tamponlarını temizler ve nihayet işlemi sonlandırır.$$⚠️ exit() fonksiyonu normal sonlanmayı gösterir; anormal sonlanmalar için abort() fonksiyonu kullanılabilir. Genellikle 0 başarılı sonlanmayı, sıfır olmayan değerler ise hata durumlarını ifade eder.",
+	"codeFile": "code-samples/24-exit-sample.c",
+	"return": "Dönüş Değeri: Bu fonksiyon geri dönmez (noreturn), işlem sonlandırılır."
+}

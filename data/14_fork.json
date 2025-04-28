@@ -1,0 +1,10 @@
+{
+	"id": "14",
+	"name": "fork",
+	"library": "unistd.h",
+	"declaration":"pid_t fork(void)",
+	"compileFlag": "cc ...",
+	"description": "Mevcut işlemi (process) klonlayarak yeni bir alt işlem oluşturmak için kullanılır. Bu fonksiyon çağrıldığında, çağrıyı yapan işlemin tam bir kopyası oluşturulur.$$Fork işlemi sonrası, ebeveyn işlemde fork() fonksiyonu çocuk işlemin Process ID'sini (PID) döndürür; çocuk işlemde ise fork() fonksiyonu 0 değerini döndürür.$$⚠️ Çocuk işlem ebeveyn işlemin bellek alanının tam bir kopyasını alır, ancak fork() sonrası yapılan değişiklikler diğer işlemi etkilemez. Ayrıca, çocuk işlem oluşturulduğunda ebeveyn işlemden açık dosya tanımlayıcılarını da devralır.",
+	"codeFile": "code-samples/14-fork-sample.c",
+	"return": "Dönüş Değeri: Ebeveyn işlemde çocuk işlemin PID'si. Çocuk işlemde 0. Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

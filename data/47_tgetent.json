@@ -1,0 +1,10 @@
+{
+    "id": "47",
+    "name": "tgetent",
+    "library": "term.h / curses.h",
+    "declaration": "int tgetent(char *bp, const char *name)",
+    "compileFlag": "cc ... -lcurses -ltermcap",
+    "description": "Terminal özellikleri veritabanından belirtilen terminale ait bilgileri alır ve bellek tamponuna yerleştirir.$$Termcap veritabanı kullanarak terminal tipine göre (TERM çevre değişkeni ile belirlenen) ekran temizleme, imleç hareketi gibi özel terminal işlevlerine erişimi sağlar.$$⚠️ Bu fonksiyon eski termcap kitaplığının bir parçasıdır; yeni programlarda terminfo tabanlı fonksiyonlar veya ncurses kullanılması önerilir.",
+    "codeFile": "code-samples/47-tgetent-sample.c",
+    "return": "Dönüş Değeri: Terminal bilgileri başarıyla alındığında 1, terminal bulunamadığında 0, veritabanı hatasında -1 döndürür."
+}

@@ -1,0 +1,10 @@
+{
+	"id": "9",
+	"name": "write",
+	"library": "unistd.h",
+	"declaration":"ssize_t write(int fd, const void *buf, size_t count)",
+	"compileFlag": "cc ...",
+	"description": "POSIX sistemlerinde bir dosya tanımlayıcısına veri yazmak için kullanılır. İlk parametre yazılacak dosyanın tanımlayıcısı, ikinci parametre yazılacak verinin bulunduğu bellek alanı, üçüncü parametre yazılacak bayt sayısıdır.$$Bu fonksiyon, standart çıkış (STDOUT_FILENO), standart hata (STDERR_FILENO) veya açılmış herhangi bir dosyaya veri yazmak için düşük seviyeli bir API sağlar.$$⚠️ write() fonksiyonu her zaman istenen tüm verileri yazamayabilir; bu nedenle döndürülen değer kontrol edilmelidir.",
+	"codeFile": "code-samples/9-write-sample.c",
+	"return": "Dönüş Değeri: Başarılı olduğunda yazılan bayt sayısı. Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

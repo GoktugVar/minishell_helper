@@ -1,0 +1,10 @@
+{
+	"id": "36",
+	"name": "readdir",
+	"library": "dirent.h",
+	"declaration":"struct dirent *readdir(DIR *dirp)",
+	"compileFlag": "cc ...",
+	"description":"Açık bir dizin akışından bir sonraki dizin girdisini okumak için kullanılır. Parametre olarak opendir() ile açılmış bir dizin akışı işaretçisi alır.$$Her çağrı, dizindeki bir sonraki girdiyi temsil eden bir dirent yapısı döndürür. dirent yapısı en azından d_name (girdi adı) ve d_ino (i-node numarası) alanlarını içerir, bazı sistemlerde d_type (dosya türü) gibi ek alanlar da bulunabilir.$$⚠️ Bu fonksiyon sıralı erişim sağlar, dizin içeriğinde rastgele arama yapılamaz. Dizinin tüm içeriğini okumak için tipik olarak bir döngü içinde çağrılır.",
+	"codeFile": "code-samples/36-readdir-sample.c",
+	"return": "Dönüş Değeri: Başarılı olduğunda bir sonraki dizin girdisini gösteren dirent yapısı işaretçisi. Dizinin sonuna gelindiğinde veya hata durumunda NULL döndürür."
+}

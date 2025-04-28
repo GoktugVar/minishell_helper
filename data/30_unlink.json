@@ -1,0 +1,10 @@
+{
+	"id": "30",
+	"name": "unlink",
+	"library": "unistd.h",
+	"declaration":"int unlink(const char *pathname)",
+	"compileFlag": "cc ...",
+	"description":"Bir dosyayı dosya sisteminden kaldırmak (silmek) için kullanılır. Parametre olarak kaldırılacak dosyanın yolunu alır.$$Bu fonksiyon dosyanın dizin girdisini kaldırır. Eğer dosyaya başka bağlantılar (hard links) yoksa ve dosyayı açık tutan başka işlemler de yoksa, dosyanın içeriği tamamen silinir.$$⚠️ unlink() bir sembolik bağlantıyı kaldırırken, bağlantının hedefini etkilemez - sadece bağlantının kendisini kaldırır. Dizinleri kaldırmak için unlink() değil, rmdir() kullanılmalıdır.",
+	"codeFile": "code-samples/30-unlink-sample.c",
+	"return": "Dönüş Değeri: Başarılı olduğunda 0. Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

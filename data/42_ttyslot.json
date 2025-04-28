@@ -1,0 +1,10 @@
+{
+    "id": "42",
+    "name": "ttyslot",
+    "library": "unistd.h",
+    "declaration": "int ttyslot(void)",
+    "compileFlag": "cc ... -lc",
+    "description": "Mevcut terminal oturumunun /etc/ttys dosyasındaki girişinin indeksini (slot numarası) döndürür.$$Bu fonksiyon, sistem yönetimi ve terminal bilgilerini takip etmek için kullanılır. Özellikle çoklu terminal oturumlarını yöneten uygulamalarda faydalıdır.$$⚠️ Modern sistemlerde artık pek kullanılmayan bir fonksiyondur, ancak geriye dönük uyumluluk için desteklenmektedir.",
+    "codeFile": "code-samples/42-ttyslot-sample.c",
+    "return": "Dönüş Değeri: Başarılı olduğunda slot numarası (pozitif tamsayı), hata durumunda veya terminal bulunamadığında 0 veya negatif bir değer döndürür."
+}

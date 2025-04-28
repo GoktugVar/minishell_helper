@@ -1,0 +1,10 @@
+{
+	"id": "17",
+	"name": "wait3",
+	"library": "sys/wait.h ve sys/resource.h",
+	"declaration":"pid_t wait3(int *status, int options, struct rusage *rusage)",
+	"compileFlag": "cc ...",
+	"description": "Çocuk işlemlerin sonlanmasını beklerken aynı zamanda kaynak kullanım istatistiklerini de toplamak için kullanılır. İlk iki parametre waitpid() fonksiyonundaki gibidir, üçüncü parametre ise çocuk işlemin kaynak kullanım bilgilerinin yazılacağı yapıdır.$$Bu fonksiyon, wait() fonksiyonuna benzer şekilde çalışır ancak ek olarak çocuk işlemin CPU zamanı, bellek kullanımı gibi kaynak istatistiklerini de sağlar.$$⚠️ Bazı modern sistemlerde bu fonksiyon kullanımdan kaldırılmış olabilir; bunun yerine wait4() kullanılması önerilir.",
+	"codeFile": "code-samples/17-wait3-sample.c",
+	"return": "Dönüş Değeri: Sonlanan çocuk işlemin PID'si. Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

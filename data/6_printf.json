@@ -1,0 +1,10 @@
+{
+	"id": "6",
+	"name": "printf",
+	"library": "stdio.h",
+	"declaration":"int printf(const char *format, ...)",
+	"compileFlag": "",
+	"description": "Formatlanmış çıktı üretmek için kullanılan standart C kütüphanesi fonksiyonudur. İlk parametre olan format dizisi, çıktının nasıl biçimlendirileceğini belirleyen özel karakterler içerir.$$Format dizisindeki %d, %s, %f gibi belirteçler, sonraki parametrelerin nasıl yorumlanacağını gösterir: %d tamsayılar için, %s dizeler için, %f kayan noktalı sayılar için.$$Bu fonksiyon, komut satırı uygulamalarında kullanıcıya bilgi göstermek ve hata mesajları yazdırmak için yaygın olarak kullanılır.",
+	"codeFile": "code-samples/6-printf-sample.c",
+	"return": "Dönüş Değeri: Başarıyla yazdırılan karakter sayısı. Hata durumunda negatif bir değer döndürür."
+}

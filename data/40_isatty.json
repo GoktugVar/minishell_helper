@@ -1,0 +1,10 @@
+{
+    "id": "40",
+    "name": "isatty",
+    "library": "unistd.h",
+    "declaration": "int isatty(int fd)",
+    "compileFlag": "cc ... -lc",
+    "description": "Belirtilen dosya tanımlayıcısının (file descriptor) bir terminal cihazına (TTY) bağlı olup olmadığını kontrol eder.$$Özellikle programın bir terminalden mi yoksa bir dosyadan/pipe'tan mı çalıştığını belirlemek için kullanılır.$$Bu fonksiyon, programın çıktı formatını terminal ekranına mı yoksa başka bir yere mi gönderildiğine göre ayarlamak için sıklıkla kullanılır.",
+    "codeFile": "code-samples/40-isatty-sample.c",
+    "return": "Dönüş Değeri: Eğer fd bir terminal cihazına ait ise 1 (true), değilse 0 (false) döndürür."
+}

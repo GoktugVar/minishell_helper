@@ -1,0 +1,10 @@
+{
+    "id": "48",
+    "name": "tgetflag",
+    "library": "term.h / curses.h",
+    "declaration": "int tgetflag(char *id)",
+    "compileFlag": "cc ... -lcurses -ltermcap",
+    "description": "Termcap veritabanından boolean (evet/hayır) bir terminal özelliğini sorgular.$$Terminal özelliklerini programatik olarak kontrol etmek için kullanılır; örneğin, terminalin renk desteği olup olmadığını veya otomatik kenar sarma özelliğini kontrol etmek gibi.$$Kullanmadan önce tgetent() fonksiyonu ile terminal bilgilerinin yüklenmesi gerekir. id parametresi, termcap özelliğinin iki harfli kodudur.",
+    "codeFile": "code-samples/48-tgetflag-sample.c",
+    "return": "Dönüş Değeri: Özellik mevcutsa 1, değilse 0 döndürür."
+}

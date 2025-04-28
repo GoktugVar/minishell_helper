@@ -1,0 +1,10 @@
+{
+	"id": "4",
+	"name": "rl_replace_line",
+	"library": "readline/readline.h",
+	"declaration":"void rl_replace_line(const char *text, int clear_undo)",
+	"compileFlag": "cc ... -lreadline",
+	"description": "Readline'ın mevcut giriş tamponundaki metni belirtilen yeni metin ile değiştirir. Bu fonksiyon, kullanıcı arabirimini güncellemeden önce arka planda metni değiştirmek için kullanılır.$$İlk parametre yeni metin içeriği, ikinci parametre ise geri alma tamponunu temizleyip temizlememe kararını belirler (0 = temizleme, 1 = temizle).$$⚠️ Bu fonksiyon ekranı otomatik olarak güncellemez, değişikliklerin görünmesi için genellikle rl_redisplay() ile birlikte kullanılır.",
+	"codeFile": "code-samples/4-rl-replace-line-sample.c",
+	"return": "Dönüş Değeri: Yok (void fonksiyon)"
+}

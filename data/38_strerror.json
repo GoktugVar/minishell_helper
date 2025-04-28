@@ -1,0 +1,10 @@
+{
+	"id": "38",
+	"name": "strerror",
+	"library": "string.h",
+	"declaration":"char *strerror(int errnum)",
+	"compileFlag": "cc ...",
+	"description":"Bir hata numarasına karşılık gelen hata mesajını döndürmek için kullanılır. Parametre olarak dönüştürülecek hata numarasını (genellikle errno değeri) alır.$$Bu fonksiyon, belirtilen hata numarasına karşılık gelen ve insanlar tarafından okunabilir bir hata mesajı içeren karakter dizisi döndürür.$$⚠️ Döndürülen karakter dizisi statik olarak ayrılmış bir bellek alanında saklanır ve fonksiyonun sonraki çağrılarında üzerine yazılabilir. Thread-safe versiyonu için strerror_r() kullanılmalıdır.",
+	"codeFile": "code-samples/38-strerror-sample.c",
+	"return": "Dönüş Değeri: Hata mesajını içeren bir karakter dizisi işaretçisi. Bilinmeyen bir hata numarası verildiğinde, mesaj bu durumu belirtir."
+}

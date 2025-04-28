@@ -1,0 +1,10 @@
+{
+	"id": "0",
+	"name": "readline",
+	"library": "readline/readline.h",
+	"declaration":"char* readline(const char *prompt)",
+	"compileFlag": "cc ... -lreadline",
+	"description": "GNU Readline kütüphanesinin temel fonksiyonu olan readline, kullanıcıdan interaktif şekilde metin girişi almak için kullanılır. Parametre olarak ekranda gösterilecek bir prompt alır ve kullanıcının girdiği metni dinamik olarak ayrılmış bir bellek alanında döndürür.$$Bu fonksiyon, otomatik satır düzenleme imkanı, komut geçmişi özelliği, tab tamamlama desteği ve CTRL+C, CTRL+D gibi sinyal işleme özellikleri sunar.$$⚠️ Valgrind’de  görülen bazı küçük \"leak\" raporları Readline kütüphanesine aittir, uygulamanıza dair değildir ve güvenle göz ardı edebilirsiniz.",
+	"codeFile": "code-samples/0-readline-sample.c",
+	"return": "Dönüş Değeri: Dinamik olarak ayrılmış bellek alanında kullanıcı girdisi.$$⚠️ İşiniz bittiğinde free() ile serbest bırakılmalıdır."
+}

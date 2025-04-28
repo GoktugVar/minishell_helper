@@ -1,0 +1,10 @@
+{
+	"id": "19",
+	"name": "signal",
+	"library": "signal.h",
+	"declaration":"void (*signal(int signum, void (*handler)(int)))(int)",
+	"compileFlag": "cc ...",
+	"description": "Belirli bir sinyal için işleyici (handler) ayarlamak için kullanılır. İlk parametre işlenecek sinyalin numarası, ikinci parametre o sinyal alındığında çağrılacak fonksiyondur.$$Handler parametresi şu değerleri alabilir: özel bir fonksiyon adresi, SIG_IGN (sinyali yok say), SIG_DFL (varsayılan davranışı uygula).$$⚠️ signal() fonksiyonu POSIX standartlarında çok güvenilir değildir ve sigaction() kullanılması önerilir. Sinyal işleme sırasında kullanılabilecek güvenli fonksiyonlar çok sınırlıdır.",
+	"codeFile": "code-samples/19-signal-sample.c",
+	"return": "Dönüş Değeri: Başarılı olduğunda önceki sinyal işleyicisinin adresi. Hata durumunda SIG_ERR döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

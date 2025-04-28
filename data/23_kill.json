@@ -1,0 +1,10 @@
+{
+	"id": "23",
+	"name": "kill",
+	"library": "signal.h",
+	"declaration":"int kill(pid_t pid, int sig)",
+	"compileFlag": "cc ...",
+	"description": "Bir işleme veya işlem grubuna sinyal göndermek için kullanılır. İlk parametre hedef işlemin PID'si, ikinci parametre gönderilecek sinyalin numarasıdır.$$PID parametresi şu değerleri alabilir: belirli bir işlemin PID'si, 0 (gönderenin işlem grubundaki tüm işlemler), -1 (gönderme izninin olduğu tüm işlemler), negatif bir değer (belirtilen işlem grubundaki tüm işlemler).$$Bu fonksiyon, işlemler arası iletişim ve kontrol mekanizması olarak kullanılabilir.$$⚠️ Sınırsız sinyal gönderimi sistem kaynaklarını tüketebilir ve performans sorunlarına neden olabilir.",
+	"codeFile": "code-samples/23-kill-sample.c",
+	"return": "Dönüş Değeri: Başarılı olduğunda 0. Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

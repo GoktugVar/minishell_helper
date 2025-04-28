@@ -1,0 +1,10 @@
+{
+    "id": "49",
+    "name": "tgetnum",
+    "library": "term.h / curses.h",
+    "declaration": "int tgetnum(char *id)",
+    "compileFlag": "cc ... -lcurses -ltermcap",
+    "description": "Termcap veritabanından sayısal bir terminal özelliğini sorgular.$$Terminal satır veya sütun sayısı, renk sayısı gibi sayısal değerleri programatik olarak elde etmek için kullanılır.$$Kullanmadan önce tgetent() fonksiyonu ile terminal bilgilerinin yüklenmesi gerekir. id parametresi, termcap özelliğinin iki harfli kodudur.",
+    "codeFile": "code-samples/49-tgetnum-sample.c",
+    "return": "Dönüş Değeri: Özelliğin sayısal değeri, özellik bulunamadıysa -1 döndürür."
+}

@@ -1,0 +1,10 @@
+{
+	"id": "18",
+	"name": "wait4",
+	"library": "sys/wait.h ve sys/resource.h",
+	"declaration":"pid_t wait4(pid_t pid, int *status, int options, struct rusage *rusage)",
+	"compileFlag": "cc ...",
+	"description": "Belirli bir çocuk işlemin sonlanmasını beklerken aynı zamanda kaynak kullanım istatistiklerini de toplamak için kullanılır. İlk üç parametre waitpid() fonksiyonundaki gibidir, dördüncü parametre ise çocuk işlemin kaynak kullanım bilgilerinin yazılacağı yapıdır.$$Bu fonksiyon, waitpid() fonksiyonunun genişletilmiş bir versiyonudur ve çocuk işlemin CPU zamanı, bellek kullanımı gibi kaynak istatistiklerini sağlar.$$Rusage parametresi NULL olmadığında, çocuk işlemin kullanıcı zamanı, sistem zamanı, sayfa hatası sayısı, blok giriş/çıkış işlemleri gibi bilgiler bu yapıya yazılır.",
+	"codeFile": "code-samples/18-wait4-sample.c",
+	"return": "Dönüş Değeri: Durum değişikliği olan çocuk işlemin PID'si. Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

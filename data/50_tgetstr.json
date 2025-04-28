@@ -1,0 +1,10 @@
+{
+    "id": "50",
+    "name": "tgetstr",
+    "library": "term.h / curses.h",
+    "declaration": "char *tgetstr(char *id, char **area)",
+    "compileFlag": "cc ... -lcurses -ltermcap",
+    "description": "Termcap veritabanından bir terminal kontrol dizisini (string) alır.$$İmleç konumlandırma, ekran temizleme gibi terminal kontrol dizilerini programatik olarak elde etmek için kullanılır.$$Kullanmadan önce tgetent() fonksiyonu ile terminal bilgilerinin yüklenmesi gerekir. id parametresi, termcap özelliğinin iki harfli kodudur. area parametresi, dizinin yerleştirileceği bellek alanını gösterir ve her çağrıdan sonra güncellenir.",
+    "codeFile": "code-samples/50-tgetstr-sample.c",
+    "return": "Dönüş Değeri: Başarılı olduğunda kontrol dizisinin başlangıç adresini içeren pointer, özellik bulunamadığında NULL döndürür."
+}

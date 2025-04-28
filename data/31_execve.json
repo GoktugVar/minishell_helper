@@ -1,0 +1,10 @@
+{
+	"id": "31",
+	"name": "execve",
+	"library": "unistd.h",
+	"declaration":"int execve(const char *pathname, char *const argv[], char *const envp[])",
+	"compileFlag": "cc ...",
+	"description":"Mevcut işlemi belirtilen programın yeni bir örneği ile değiştirmek için kullanılır. İlk parametre çalıştırılacak programın yolu, ikinci parametre program argümanları dizisi, üçüncü parametre program çevre değişkenleri dizisidir.$$Bu fonksiyon çağrıldığında, mevcut işlem durdurulur ve belirtilen program aynı işlem kimliği (PID) altında çalıştırılır. İşlemin kod, veri, yığın segmentleri yeni program için tamamen değiştirilir.$$⚠️ execve() başarılı olursa asla geri dönmez çünkü mevcut işlem yeni program ile değiştirilmiştir. Başarısız olduğunda ise -1 döndürür ve mevcut işlem çalışmaya devam eder.",
+	"codeFile": "code-samples/31-execve-sample.c",
+	"return": "Dönüş Değeri: Başarılı olduğunda geri dönmez. Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}

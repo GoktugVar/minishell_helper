@@ -1,0 +1,10 @@
+{
+	"id": "16",
+	"name": "waitpid",
+	"library": "sys/wait.h",
+	"declaration":"pid_t waitpid(pid_t pid, int *status, int options)",
+	"compileFlag": "cc ...",
+	"description": "Belirli bir çocuk işlemin sonlanmasını beklemek için kullanılır. İlk parametre beklenen çocuk işlemin PID'si, ikinci parametre çıkış durumunun yazılacağı adres, üçüncü parametre bekleme davranışını etkileyen seçeneklerdir.$$PID parametresi şu değerleri alabilir: belirli bir çocuk işlemin PID'si, -1 (herhangi bir çocuk işlem), 0 (aynı işlem grubundaki herhangi bir çocuk işlem), negatif bir değer (belirtilen işlem grubundaki herhangi bir çocuk işlem).$$Options parametresi WNOHANG (bloklanmadan hemen dön), WUNTRACED (durdurulan çocukları da raporla) ve diğer bayrakları içerebilir.",
+	"codeFile": "code-samples/16-waitpid-sample.c",
+	"return": "Dönüş Değeri: Durum değişikliği olan çocuk işlemin PID'si (WNOHANG ile birlikte kullanıldığında, hiçbir çocuk hazır değilse 0). Hata durumunda -1 döndürür ve errno değişkeni ile hata kodu belirtilir."
+}
